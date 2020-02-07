@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webService-challenge", "webService-challenge\webService-challenge.csproj", "{E012B833-37C2-4592-961C-2C5A2D72D1C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webServiceTEST", "webServiceTEST\webServiceTEST.csproj", "{7B765CF0-EA6A-42A6-88C6-6B91C4A0E20D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryTest", "webServiceTEST\ClassLibraryTest.csproj", "{7B765CF0-EA6A-42A6-88C6-6B91C4A0E20D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{176D0D22-296B-4800-8726-EA41CB0739FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7B765CF0-EA6A-42A6-88C6-6B91C4A0E20D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B765CF0-EA6A-42A6-88C6-6B91C4A0E20D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B765CF0-EA6A-42A6-88C6-6B91C4A0E20D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{176D0D22-296B-4800-8726-EA41CB0739FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{176D0D22-296B-4800-8726-EA41CB0739FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{176D0D22-296B-4800-8726-EA41CB0739FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{176D0D22-296B-4800-8726-EA41CB0739FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

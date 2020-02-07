@@ -1,17 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
 using System.Xml;
 using Newtonsoft.Json;
-using ClassLibrary;
 
-namespace webService_challenge.Controllers
+namespace ClassLibrary
 {
-
-    public class XmlToJsonController : ApiController
+    public class Convert
     {
         private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -23,7 +16,10 @@ namespace webService_challenge.Controllers
             }
             try
             {
-                return ClassLibrary.Convert.XmlToJson(xml);
+                XmlDocument doc = new XmlDocument();
+                doc.LoadXml(xml);
+                string json = JsonConvert.SerializeXmlNode(doc);
+                return json;
             }
             catch (Exception e)
             {
@@ -32,5 +28,6 @@ namespace webService_challenge.Controllers
             }
 
         }
+
     }
 }

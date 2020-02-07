@@ -21,10 +21,8 @@ namespace webService_challenge
         public string Fibonacci(int n)
         {
             log.Debug("call Fibonacci method with argument "+n);
-                int result = FibonacciController.Fibonacci_Iterative(n);
+                int result = FibonacciController.Fibonacci(n);
                 return "Fibonacci(" + n + ") must return "+result;
-            
-
         }
 
         [WebMethod]
